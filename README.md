@@ -1,4 +1,4 @@
-# Replication code for Kisembe et al., # *Assessing the Impacts of Falling Ice Radiative Effects on the Seasonal Variation of Land Surface Properties*
+# Replication code for Kisembe et al., *Assessing the Impacts of Falling Ice Radiative Effects on the Seasonal Variation of Land Surface Properties*
 
 This code replicates the analysis and figures in Kisembe et al. 2024, *Journal of Geophysical Research: Atmospheres*
 
