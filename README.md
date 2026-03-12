@@ -15,6 +15,6 @@ The omission of FIREs in climate models may influence the simulated surface radi
 
 Following the framework of Li et al. (2016), this repository investigates the impacts of FIREs on land surface properties using the surface energy balance. The analysis uses sensitivity experiments from the Community Earth System Model Version 1 (CESM1) with the Community Atmosphere Model Version 5 (CAM5), comparing simulations with FIREs enabled and disabled.
 
-The schematic below illustrates how radiative fluxes interact with frozen hydrometeors in the real world compared to their representation in climate models.
+The schematic below illustrates how radiative fluxes interact with frozen hydrometeors in the **REAL WORLD** compared to their representation in **CLIMATE MODELS**.
 
 ![FIRE schematic](FIRES_Schemantic.jpg)
