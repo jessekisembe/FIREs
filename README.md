@@ -17,8 +17,9 @@ Following previous work by [Li et al. (2016)](https://doi.org/10.1002/2016JD0251
 
 The schematic below illustrates cloud-precipitation-radiation interactions in the **REAL WORLD** compared to their representation in **CLIMATE MODELS**.
 
+
 ![FIRE schematic](FIRES_Schemantic.jpg)
 
 
-# Other Notes
+## Other Notes
 For questions, please reach out to @jessekisembe Jesse Kisembe.
