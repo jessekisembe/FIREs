@@ -19,11 +19,11 @@ def open_cesm_atm(file_path):
     
     ##-- group data into yearly means from seasons
 
-    RSDS=ds.FSDS.groupby('time.season')['JJA'].groupby('time.year').mean('time') 
-    RLDS=ds.FLDS.groupby('time.season')['JJA'].groupby('time.year').mean('time')
+    RSDS=ds.FSDS.groupby('time.season')['DJF'].groupby('time.year').mean('time') 
+    RLDS=ds.FLDS.groupby('time.season')['DJF'].groupby('time.year').mean('time')
     NET=ds.FSNS+ds.FLDS
-    NETRAD=NET.groupby('time.season')['JJA'].groupby('time.year').mean('time')
-    LST=ds.TS.groupby('time.season')['JJA'].groupby('time.year').mean('time')  
+    NETRAD=NET.groupby('time.season')['DJF'].groupby('time.year').mean('time')
+    LST=ds.TS.groupby('time.season')['DJF'].groupby('time.year').mean('time')  
         
     return RSDS,RLDS,NETRAD,LST
         
@@ -62,4 +62,4 @@ var2=xr.DataArray(data=p_value, dims=('lat', 'lon'), coords={'lat':lat, 'lon':lo
 #ds=xr.merge([var1, var2])
 
 ## save data as netcdf
-var2.to_netcdf('D:/data/CESM1/seas/diff/netRAD_pvalue_NOS_SON_diff_1980-2005_2deg_JJA.nc', mode='w')
+var2.to_netcdf('D:/data/CESM1/seas/diff/netRAD_pvalue_NOS_SON_diff_1980-2005_2deg_DJF.nc', mode='w')
