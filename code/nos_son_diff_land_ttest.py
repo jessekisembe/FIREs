@@ -18,16 +18,16 @@ def open_cesm_land(file_path):
     
     ##-- group data into yearly means from seasons
 
-    GRTM=ds.TG.groupby('time.season')['JJA'].groupby('time.year').mean('time') #ground temperature
-    TEMP=ds.TSA.groupby('time.season')['JJA'].groupby('time.year').mean('time') #2m air temperature
-    GEVP=ds.QSOIL.groupby('time.season')['JJA'].groupby('time.year').mean('time') #ground evaporation
-    SPHM=ds.Q2M.groupby('time.season')['JJA'].groupby('time.year').mean('time') # 2m specific humidity
-    SOM=ds.SOILLIQ.sel(levgrnd=slice('0.007101')).groupby('time.season')['JJA'].groupby('time.year').mean('time') # soil liquid water
+    GRTM=ds.TG.groupby('time.season')['DJF'].groupby('time.year').mean('time') #ground temperature
+    TEMP=ds.TSA.groupby('time.season')['DJF'].groupby('time.year').mean('time') #2m air temperature
+    GEVP=ds.QSOIL.groupby('time.season')['DJF'].groupby('time.year').mean('time') #ground evaporation
+    SPHM=ds.Q2M.groupby('time.season')['DJF'].groupby('time.year').mean('time') # 2m specific humidity
+    SOM=ds.SOILLIQ.sel(levgrnd=slice('0.007101')).groupby('time.season')['DJF'].groupby('time.year').mean('time') # soil liquid water
     SOM = np.squeeze(SOM, axis=1)
-    SOI=ds.SOILICE.sel(levgrnd=slice('0.007101')).groupby('time.season')['JJA'].groupby('time.year').mean('time') # soil ice
+    SOI=ds.SOILICE.sel(levgrnd=slice('0.007101')).groupby('time.season')['DJF'].groupby('time.year').mean('time') # soil ice
     SOI = np.squeeze(SOI, axis=1)
-    SNC=ds.FSNO.groupby('time.season')['JJA'].groupby('time.year').mean('time') # snow cover
-    SND=ds.H2OSNO.groupby('time.season')['JJA'].groupby('time.year').mean('time') # snow depth
+    SNC=ds.FSNO.groupby('time.season')['DJF'].groupby('time.year').mean('time') # snow cover
+    SND=ds.H2OSNO.groupby('time.season')['DJF'].groupby('time.year').mean('time') # snow depth
         
     return GRTM,TEMP,GEVP,SPHM,SOM,SOI,SNC,SND
         
@@ -66,4 +66,4 @@ var2=xr.DataArray(data=p_value, dims=('lat', 'lon'), coords={'lat':lat, 'lon':lo
 #ds=xr.merge([var1, var2])
 
 ## save data as netcdf
-var2.to_netcdf('D:/data/CESM1/seas/diff/land/Snowdepth_pvalue_NOS_SON_diff_1980-2005_2deg_JJA.nc', mode='w')
+var2.to_netcdf('D:/data/CESM1/seas/diff/land/Snowdepth_pvalue_NOS_SON_diff_1980-2005_2deg_DJF.nc', mode='w')
