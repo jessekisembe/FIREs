@@ -13,8 +13,8 @@ Previous studies have shown that most models participating in the Coupled Model 
 
 The omission of FIREs in climate models may influence the simulated surface radiative budget and, consequently, affect land surface temperature and other surface processes. Such discrepancies in present-day simulations may also influence the reliability of future climate projections.
 
-Following the framework of Li et al. (2016), this repository investigates the impacts of FIREs on land surface properties using the surface energy balance. The analysis uses sensitivity experiments from the Community Earth System Model Version 1 (CESM1) with the Community Atmosphere Model Version 5 (CAM5), comparing simulations with FIREs enabled and disabled.
+Following previous work by [Li et al. (2016)](https://doi.org/10.1002/2016JD025175), we investigate the impacts of FIREs on land surface properties using a pair of sensitivity experiments using the National Center for Atmospheric Research (NCAR) Community Earth System Model Version 1 (CESM1) in fully coupled modes with FIREs turned on and off.
 
-The schematic below illustrates how radiative fluxes interact with frozen hydrometeors in the **REAL WORLD** compared to their representation in **CLIMATE MODELS**.
+The schematic below illustrates cloud-precipitation-radiation interactions in the **REAL WORLD** compared to their representation in **CLIMATE MODELS**.
 
 ![FIRE schematic](FIRES_Schemantic.jpg)
