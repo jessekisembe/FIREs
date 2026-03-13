@@ -1,11 +1,11 @@
 #  Assessing the Impacts of Falling Ice Radiative Effects (FIREs) on the Seasonal Variation of Land Surface Properties Replication code
 
-This repository contains replication code for [Kisembe et al. (2024)](https://doi.org/10.1029/2024JD040991) in the *Journal of Geophysical Research: Atmospheres*
+This repository contains replication code for [Kisembe et al. (2024)](https://doi.org/10.1029/2024JD040991) published in the *Journal of Geophysical Research: Atmospheres*
 
 This includes the code necessary to reproduce all main text and supplementary figures. This code is to be used in conjunction with the replication data at [doi.org/10.5281/zenodo.8092600](https://zenodo.org/records/10476872).
 
 
-# Motivation
+### Motivation
 
 Coupled global climate models (GCMs) are widely used to study interactions between the atmosphere and the land surface. However, uncertainties remain in how these models represent clouds and frozen hydrometeors, including cloud fraction, cloud hydrometeor mass, falling hydrometeors (e.g., snow), and their radiative impacts on surface energy and hydrological processes.
 
@@ -20,5 +20,5 @@ The schematic below illustrates cloud-precipitation-radiation interactions in th
 ![FIRE schematic](FIRES_Schemantic.jpg)
 
 
-## Other Notes
+### Other Notes
 For questions, please reach out to @jessekisembe Jesse Kisembe.
